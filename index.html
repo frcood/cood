@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>*Flo Cood*</title>
+    <meta name="Flo Cood" content="*Portafolio estudiante de diseño*">
+    <link rel="icon" type="image/png" href="media/favicon.png" />    
+    <!-- Metadatos Genéricos -->
+    <meta name="Flo Cood" content="*Portafolio estudiante de diseño*">
+    <meta name="image" content="media/fotopagina.png">
+    <!-- Metadatos para Schema.org for Google -->
+    <meta itemprop="Flo Cood" content="*Flo Cood*">
+    <meta itemprop="Flo Cood" content="Portafolio estudiante de diseño">
+    <meta itemprop="image" content="media/fotopagina.png">
+    <!-- Metadatos para Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="*Flo Cood*">
+    <meta name="twitter:description" content="Portafolio estudiante de diseño">
+    <meta name="twitter:image" content="media/fotopagina.png">
+    <!-- Metadatos para Open Graph general (Facebook y Pinterest) -->
+    <meta name="og:title" content="Flo Cood">
+    <meta name="og:description" content="Portafolio estudiante diseño">
+    <meta name="og:image" content="media/fotopagina.png">
+    <meta name="og:locale" content="es_CL">
+    <meta name="og:type" content="website">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"
+
+    <!-- Ahora vinculamos el estilo -->
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+</head>
+
+<body>
+    <div id="contenido">
+        <header>
+            <h1>Flo Cood</h1>
+            <h2>Portafolio estudiante de diseño UC</h2>
+        </header>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="media/video.mp4" type="video/mp4">
+        </video>
+
+        <h3>Acerca de mi</h3>
+        <div id="somos">
+
+            <div class="dupla primera">
+                <h4>Florencia Cood</h4>
+                <h5>El buen diseño es evidente, el gran diseño es transparente
+
+</h5>
+                <p>Diseñadora integral de la universidad Católica, egresada del colegio Craighouse</p>
+                <address><a href="mailto:frcood@uc.cl">frcood@uc.cl</a></address>
+            </div>
+
+            <div class="dupla segunda">
+                <h4></h4>
+                <h5>Estudiante diseño integral
+                Cursando taller 6 (Audiovisual) </h5>
+                <p></p>
+         
+            
+            <hr />
+        </div><!-- acá cerramos el div id="somos"-->
+
+        <h3>PORTAFOLIO</h3>
+        
+        <div id="portafolio">
+        
+            <!--acá se colocan y organizan las cosas con programación-->
+        
+        </div><!-- acá cerramos el div id="portafolio"-->
+
+        <footer>
+            <p>Procesos de Producción · sección web · primer semestre · 2019</p>
+        </footer>
+
+    </div><!-- acá abajo cerramos el div id="contenido"-->
+
+    <!-- Lo que sigue SI es PROGRAMACIÓN -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script>
+        // ESTO SIRVE PARA ARREGLAR CADA ÍTEM DEL PORTAFOLIO COMO ALBAÑILERÍA (MASONRY)
+        window.onload = function() {
+            var container = document.querySelector('#portafolio');
+            var msnry = new Masonry(portafolio, {
+                itemSelector: '.item'
+            });
+        };
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="portafolio.js"></script>
+</body>
+
+</html>
